@@ -1,0 +1,236 @@
+@font-face { font-family: opendyslexic-bold; src: url('font/OpenDyslexic-Bold.otf'); }
+@font-face { font-family: opendyslexic-reg; src: url('font/OpenDyslexic-Regular.otf'); }
+@font-face { font-family: opendyslexic-ita; src: url('font/OpenDyslexic-Italic.otf'); }
+@font-face { font-family: ut; src: url('font/JawiUthmanTaha.ttf'); }
+@font-face { font-family: lateef; src: url('font/Lateef.ttf'); }
+@font-face { font-family: amiri; src: url('font/AmiriQuran-Regular.ttf'); }
+
+header {
+    background-color: #ebffe3;
+	padding: 0 20px;
+	margin-bottom: 40px;
+	}
+
+body {
+    font-family: opendyslexic-reg;
+    margin: 0;
+	color: #555;
+	overflow-y: scroll;
+    }
+	
+main {
+	margin: 0px auto;
+	max-width: 50rem;
+	width: 90%;
+	margin-bottom: 200px;
+	}
+    
+.arab {
+    direction: rtl;
+    font-family: ut;
+    font-size: 22px;
+    }
+	
+.qur {
+    direction: rtl;
+    font-family: amiri;
+    font-size: 22px;
+	text-align: center;
+    }
+	
+.h1a {
+	direction: rtl;
+	font-family: lateef;
+	font-size: 32px;
+	}
+
+h1 {
+	font-size: 17px;
+	}
+	
+.n {
+	font-size: 12px;
+	}
+	
+.pg {
+	font-size: 10px;
+	padding-right: 5px;
+	border-right: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	}
+
+.jp {
+	font-size: 15px;
+	background-color: #f5eeff;
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+
+.ch {
+	text-align: center;
+	margin-top: 20px;
+	}
+	
+.ch a {
+	font-size: 12px;
+	background-color: lightyellow;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5px;
+	}
+	
+footer {
+	text-align: center;
+    width: 100%;
+	position: fixed;
+    bottom: 0;
+    background-color: #ebffe3;
+    padding: 5px 0;  /* Adjust padding for height slightly more than the font size */
+	}
+
+footer p {
+    font-size: 8px;
+    margin: 0;  /* Ensure there's no additional margin */
+    padding-left: 5px;
+    padding-right: 5px;
+	}
+
+.centbut {
+    display: flex;
+	justify-content: center; /* Centers the divs horizontally */
+	align-items: center;     /* Centers the divs vertically */
+	}
+
+.centbut a {
+	margin-left: 5px;
+    margin-right: 5px;
+	}
+	
+.social-icons {
+    display: inline-block;  /* Ensure the icons are in-line with the text */
+	}
+
+.social-icons a {
+    margin-left: 10px;
+    margin-right: 10px;
+	text-decoration: none;
+	}
+
+.social-icons img {
+    width: 16px;  /* Adjust the size of the icons as needed */
+    height: 16px;
+    vertical-align: middle;  /* Align the icons properly with the text */
+	}
+
+ol {
+	margin-left: 0;  /* Remove extra left margin */
+	padding-left: 20px;  /* Adjust this value to control the distance from the left edge */
+	}
+
+ol ::marker {
+	color: blue;
+	font-weight: bold;
+	font-size: 12px;
+	}
+
+li {
+	padding-bottom: 20px;
+	}
+	
+.stt {
+	position: fixed;
+	bottom: 50px;
+	right: 10px;
+	z-index: 9;
+	width: 15px;
+	padding: 1px 1px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #ffd9d9;
+	color: grey;
+	text-decoration: none;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	}
+
+.stt:active {
+	color: white;
+	background-color: black;
+	}
+	
+.xout {
+	color: #555;
+	}	
+	
+#nextBtn {
+	border: 1px solid lightgrey;
+	border-right: none;
+	color: red;
+	font-size: 10px;
+	cursor: pointer;
+	display: inline-block;
+	width: 30px;
+	padding: 5px 0;
+	text-align: center;
+	text-decoration: none;
+	background-color: #ebffe3;
+	}
+
+#prevBtn {
+	border: 1px solid lightgrey;
+	border-left: none;
+	color: red;
+	font-size: 10px;
+	cursor: pointer;
+	display: inline-block;
+	width: 30px;
+	padding: 5px 0;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	background-color: #ebffe3;
+	}
+
+.next {
+	position: fixed;
+	bottom: 50%;
+	right: 5px;
+	z-index: 9;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	}
+
+.prev {
+	position: fixed;
+	bottom: 50%;
+	left: 5px;
+	z-index: 9;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	}
+
+#searchBox {
+	margin-top: 20px;
+	font-family: opendyslexic-reg;
+	font-size: 10px;
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	}
+	
+a.isi{
+	text-decoration: underline lightgrey dotted;
+	text-underline-offset: 5px;
+	font-family: opendyslexic-reg;
+	color: #555;
+	font-size: 12px;
+	}
+	
+@media (max-width: 500px) {			
+		.next {
+			right: 0;
+		}
+		.prev {
+			left: 0;
+		}	
+    }
